@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class BackJun2439 {
 	public static void main(String[] args) {
 		
+		//별찍기 살짝 어려운버전2
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		

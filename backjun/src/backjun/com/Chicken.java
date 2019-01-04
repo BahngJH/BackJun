@@ -1,10 +1,10 @@
 package backjun.com;
 
 public class Chicken {
-	private int cupon;	//ÄíÆù°¹¼ö
-	private int freeChicken;	//²ÇÄ¡Å²¿¡ ÇÊ¿äÇÑ °¹¼ö
-	private int money;	//¼öÁß¿¡ ÀÖ´Â µ· 
-	private int priceChicken; //Ä¡Å²°ª
+	private int cupon;	//ì¿ í°ê°¯ìˆ˜
+	private int freeChicken;	//ê½ì¹˜í‚¨ì— í•„ìš”í•œ ì¿ í°ìˆ˜
+	private int money;	//ìˆ˜ì¤‘ì— ìˆëŠ” ëˆ
+	private int priceChicken; //ì¹˜í‚¨ê°’
 	private int total;
 	
 	public Chicken() {}
