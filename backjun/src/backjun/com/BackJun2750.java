@@ -3,10 +3,12 @@ package backjun.com;
 public class BackJun2750 {
 	public static void main(String[] args) 
 	{
-		int[] arr = {5,5,2,3,4,1};
+		//int[] arr = {5,5,2,3,4,1};
 		//int[] arr = {5,7,2,3,40,22,4,1,10,20};
-		//int[] arr = {9,8,7,6,5,4,3,2,1};
+		int[] arr = {6,5,3,1,8,7,2,4};
 		
+		int arrLength = arr.length;
+		int temp = 0;
 		int index = 0;
 		
 //		for(int i=0;i<arr.length;i++) 
@@ -36,26 +38,46 @@ public class BackJun2750 {
 		//여기 까지 선택정렬 구현
 		
 		
-		int arrLength = arr.length;
-		int temp = 0;
-		while(arrLength>0) 
-		{
-			for(int i=0;i<arrLength-1;i++) 
+//		while(arrLength>0) 
+//		{
+//			for(int i=0;i<arrLength-1;i++) 
+//			{
+//				if(arr[i]>arr[i+1]) 
+//				{
+//					temp = arr[i+1];
+//					arr[i+1] = arr[i];
+//					arr[i] = temp;
+//				}
+//			}
+//			for(int i:arr) {
+//				System.out.print(i+" ");
+//			}
+//			System.out.println();
+//			arrLength--;
+//		}
+		//여기까지 버블 정렬
+		
+		
+		for(int i=1;i<arr.length;i++) 
+		{	
+			for(int j=i;j>0;j--) 
 			{
-				if(arr[i]>arr[i+1]) 
+				//System.out.println(arr[j-1]+" : "+arr[j]);
+				if(arr[j-1]>arr[j]) 
 				{
-					temp = arr[i+1];
-					arr[i+1] = arr[i];
-					arr[i] = temp;
+					temp = arr[j];
+					arr[j] = arr[j-1];
+					arr[j-1] = temp;
 				}
 			}
-			for(int i:arr) {
-				System.out.print(i+" ");
+			
+			for(int k:arr) 
+			{
+				System.out.print(k+" ");
 			}
 			System.out.println();
-			arrLength--;
 		}
-		//여기까지 버블 정렬
+		//여기까지 삽입정렬
 		
 	}
 }
