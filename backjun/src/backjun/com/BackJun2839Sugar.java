@@ -2,7 +2,7 @@ package backjun.com;
 
 import java.util.Scanner;
 
-public class Back2839 {
+public class BackJun2839Sugar {
 	public static void main(String[] args) {
 		
 		//설탕배달 하기

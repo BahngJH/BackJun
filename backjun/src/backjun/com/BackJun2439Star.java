@@ -2,21 +2,22 @@ package backjun.com;
 
 import java.util.Scanner;
 
-public class BackJun2441 {
+public class BackJun2439Star {
 	public static void main(String[] args) {
 		
-		//별찍기 살짝 어려운 버전
+		//별찍기 살짝 어려운버전2
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-
-		for (int i = 0; i < n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if (i < j)
-					System.out.print("*");
-				else
+		
+		for(int i=1;i<=n;i++) {
+			for(int j=n;j>0;j--) {
+				if(i<j)
 					System.out.print(" ");
+				else
+					System.out.print("*");
 			}
 			System.out.println("");
 		}
+		
 	}
 }

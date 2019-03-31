@@ -1,6 +1,6 @@
 package backjun.com;
 
-public class BackJun2750 {
+public class BackJun2750Sort {
 	public static void main(String[] args) 
 	{
 		//int[] arr = {5,5,2,3,4,1};
