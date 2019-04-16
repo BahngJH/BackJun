@@ -37,7 +37,6 @@ public class BackJun2750Sort {
 //		}
 		//여기 까지 선택정렬 구현
 		
-		
 //		while(arrLength>0) 
 //		{
 //			for(int i=0;i<arrLength-1;i++) 
