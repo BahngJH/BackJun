@@ -9,11 +9,14 @@ public class BackJun4673SelfNum {
 		boolean isSelf = false;
 		notSelf = self(1,notSelf);
 		
-		for(int i=0;i<10000;i++) {
-			for(int j=0;j<notSelf.length;j++) {
+		for(int i=0;i<10000;i++) 
+		{
+			for(int j=0;j<notSelf.length;j++)
+			{
 				if(i==notSelf[j]) 
-						isSelf=true;
+					isSelf=true;
 			}
+			
 			if(isSelf==false)
 				System.out.println(i);
 			isSelf=false;
@@ -37,11 +40,14 @@ public class BackJun4673SelfNum {
 				sum+=temp%10;
 				temp=temp/10;
 			}
+			
 			sum+=num;
+			
 			if(sum<10000) 
 			{
 				notSelf[++count] = sum;
 			}
+			
 			self(++num,notSelf);
 		}
 		return notSelf;
