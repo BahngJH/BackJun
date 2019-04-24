@@ -19,6 +19,7 @@ public class BackJun8958OX {
 				ox[i] = sc.nextLine();
 			}
 			
+			
 			for(int i=0;i<ox.length;i++)
 			{
 				if(ox[i].equals("O")) {
