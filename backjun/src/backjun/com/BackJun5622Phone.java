@@ -24,11 +24,11 @@ public class BackJun5622Phone {
 				time += 6;
 			else if (num >= 12 && num < 15)
 				time += 7;
-			else if (num >= 15 && num < 18)
+			else if (num >= 15 && num < 19)
 				time += 8;
-			else if (num >= 18 && num < 21)
+			else if (num >= 19 && num < 22)
 				time += 9;
-			else if(num >= 21 && num < 25)
+			else if(num >= 22 && num < 26)
 				time +=10;
 		}
 		System.out.println(time);
