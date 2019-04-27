@@ -11,8 +11,6 @@ public class BackJun2577NumCount {
 		int b = sc.nextInt();
 		int c = sc.nextInt();
 		
-		
-		
 		int multi = a*b*c;
 		
 		int[] number = new int[10];

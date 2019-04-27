@@ -19,7 +19,7 @@ public class BackJun4673SelfNum {
 			
 			if(isSelf==false)
 				System.out.println(i);
-			isSelf=false;
+				isSelf=false;
 		}
 		
 	}
@@ -32,7 +32,6 @@ public class BackJun4673SelfNum {
 		}
 		else 
 		{
-			
 			int temp = num;
 			int sum=0;
 			while(temp!=0) 
