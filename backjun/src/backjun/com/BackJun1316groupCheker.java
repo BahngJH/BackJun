@@ -9,15 +9,18 @@ public class BackJun1316groupCheker {
 		int caseNum = sc.nextInt();
 		sc.nextLine();
 		int result = caseNum;
-		boolean ischeck = true;
-		
 		
 		while(caseNum > 0)
 		{
 			String input = sc.nextLine();
 			char[] inputArr = input.toCharArray();
+			
+			//사용된 문자를 기록할 배열
 			char[] check = new char[inputArr.length];
+			//check에 사용될 첨자
 			int checkNum = 0;
+			//그룹체커인지 아닌지 판별할 변수
+			boolean ischeck = true;
 			
 			for(int i=1;i<inputArr.length;i++)
 			{
@@ -51,14 +54,15 @@ public class BackJun1316groupCheker {
 					}
 				}
 				
-				if(ischeck==false) 
+				if(ischeck == false) 
 				{
+					//전체에서 아닌것 감소
 					result--;
 					break;
 				}
 			}
+			//라운드 체크
 			caseNum--;
-			ischeck = true;
 		}
 		System.out.println(result);
 		
