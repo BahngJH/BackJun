@@ -10,18 +10,21 @@ public class SortQuick {
 	
 	public static void quick(int[] arr, int start, int end)
 	{
+		//if(arr.length==1)
+			
+		
 		int pivot = (start+end) / 2;
 		int left = start;
 		int right = end;
 		
 		while(true)
 		{
-			while(arr[left]>arr[pivot] || left==pivot) 
+			while(arr[left] > arr[pivot] || left!=pivot) 
 			{
 				left++;
 			}
 			
-			while(arr[right]<pivot || right==left)
+			while(arr[right] < pivot || right!=left)
 			{
 				right--;
 			}
@@ -37,7 +40,6 @@ public class SortQuick {
 				arr[pivot] = temp;
 				break;
 			}
-			
 		}
 		
 	}
