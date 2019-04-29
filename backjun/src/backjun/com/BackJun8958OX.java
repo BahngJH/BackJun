@@ -12,17 +12,13 @@ public class BackJun8958OX {
 		
 		while(round!=testCase) 
 		{
-			String[] ox = new String[10];
 			int score = 0;
-			
-			for(int i=0;i<10;i++) {
-				ox[i] = sc.nextLine();
-			}
-			
+			String inputOx = sc.nextLine();
+			char[] ox = inputOx.toCharArray();
 			
 			for(int i=0;i<ox.length;i++)
 			{
-				if(ox[i].equals("O")) {
+				if(ox[i] == 'O') {
 					sum[round] += ++score;
 				}else {
 					score=0;
