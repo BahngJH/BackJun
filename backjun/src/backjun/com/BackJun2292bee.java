@@ -4,38 +4,33 @@ import java.util.Scanner;
 
 public class BackJun2292bee {
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		//방이 생성되는 라운드 체크
-		int num = 1;
-		//생성되는 방 수 체크, 중앙 제외하고 2부터 시작
-		int beeRoom = 2;
-		boolean isValue = false;
+
+		// 방이 생성되는 라운드 체크
+		int round = 1;
 		
-		while(true)
+		int start = 2;
+		int end = 7;
+
+		while (n > 1) 
 		{
-			//처음 주변에 6개방 2번째 주변에 12개, 3번째 주변에 18개씩 증가함
-			int end = num * 6;
-			
-			for(int i=0;i<end;i++)
+			if(start<=n && n<=end)
 			{
-				if(beeRoom==n)
-				{
-					isValue = true;
-					break;
-				}else {
-					beeRoom++;
-				}
-			}
-			
-			if(isValue==true)
+				//1을 포함한 최단경로 때문에 1 더함
+				round +=1;
 				break;
-			else {
-				num++;
+			}else {
+				start = start+(round*6);
+				end = end+((round+1)*6);
+				round++;
 			}
 		}
-		//라운드 수 + 1 만큼이 최소 개수의 방을 지나서 가는 경우다.
-		System.out.println(num+1);
+		if (n == 1)
+			System.out.println(1);
+		else
+			// 라운드 수 + 1 만큼이 최소 개수의 방을 지나서 가는 경우다.
+			System.out.println(round);
 	}
 }
