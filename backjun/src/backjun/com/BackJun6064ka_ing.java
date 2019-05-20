@@ -31,7 +31,6 @@ public class BackJun6064ka_ing {
 	{
 		int num = 1;
 		int y2 = 1;
-		int limited = 0;
 		boolean isValue = false;
 		
 		while(true)
@@ -44,7 +43,6 @@ public class BackJun6064ka_ing {
 			}else {
 				y2 += M;
 				num += M;
-				limited++;
 			}
 			
 			if(y2 > N) {
@@ -60,9 +58,6 @@ public class BackJun6064ka_ing {
 				isValue = true;
 				break;
 			}
-			
-			if(limited > M)
-				break;
 			
 		}
 		if(isValue == true)
